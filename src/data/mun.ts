@@ -115,7 +115,9 @@ export const secretariat: SecretariatRole[] = [
   {
     role: "Head of Delegate Affairs",
     names: "Drishya Chordia & Amiya",
-    blurb: "First point of contact for delegate queries and school-to-school communication.",
+    blurb:
+      "Creativity has always been my driving force, and as Marketing Director for this year's MCTM MUN, I've loved turning that passion into content that actually connects with people. From campaigns to online content, our goal is to make every delegate excited to be part of something bigger.",
+    image: "/secretariat/drishya.jpeg",
   },
   {
     role: "Head of Marketing",
