@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --bottle-green: #163229;
+  --bottle-green-deep: #0b1a15;
+  --bottle-green-light: #2d5844;
+  --paper: #f1e9d4;
+  --ink: #f4ecd8;
+  --ink-soft: rgba(244, 236, 216, 0.78);
+  --ink-dark: #221a12;
+  --ink-dark-soft: rgba(34, 26, 18, 0.72);
+  --bottle-green-paper: #9fd6b8;
+  --border: #e2ded3;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-serif);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.page-shell {
+  position: relative;
+  background: var(--background) url("/textures/crumpled-paper.webp");
+  background-size: auto;
+  background-position: top center;
+  background-repeat: repeat;
+}
+
+.content-page {
+  position: relative;
+  min-height: 100svh;
+  color: var(--ink);
+  padding: 3.5rem 1.5rem 6rem;
+  overflow: hidden;
+}
+
+.content-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(60% 40% at 100% 100%, rgba(0, 0, 0, 0.16), transparent 70%),
+    radial-gradient(50% 35% at 0% 100%, rgba(0, 0, 0, 0.14), transparent 70%),
+    radial-gradient(70% 35% at 50% 0%, rgba(0, 0, 0, 0.1), transparent 65%);
+}
+
+.content-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+.content-page h1,
+.content-page h2,
+.content-page h3 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+}

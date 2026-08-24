@@ -1,0 +1,119 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  background: var(--bottle-green-deep);
+  color: var(--paper);
+  padding: 4.5rem clamp(1.5rem, 6vw, 4rem) 2.25rem;
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 3rem;
+  max-width: 78rem;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(241, 233, 212, 0.14);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.wordmark {
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.6rem;
+  color: var(--paper);
+}
+
+.tagline {
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(241, 233, 212, 0.72);
+  margin: 0;
+  max-width: 26rem;
+}
+
+.linkGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.groupLabel {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(241, 233, 212, 0.5);
+  margin: 0 0 0.3rem;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--paper);
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.link:hover {
+  color: #9fd6b8;
+  text-decoration: underline;
+}
+
+.address {
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: rgba(241, 233, 212, 0.82);
+  margin: 0;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  max-width: 78rem;
+  margin: 1.75rem auto 0;
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: rgba(241, 233, 212, 0.55);
+}
+
+.bottom p {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .top {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

@@ -1,0 +1,27 @@
+.card {
+  position: relative;
+  background: #fbf8f0;
+  border: 1px solid var(--border);
+  padding: var(--card-padding, 1.75rem 1.6rem 1.5rem);
+  box-shadow: 0 10px 24px rgba(34, 26, 18, 0.08);
+  transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+  --ink: var(--ink-dark);
+  --ink-soft: var(--ink-dark-soft);
+  color: var(--ink);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.25rem;
+  height: 2px;
+  background: var(--bottle-green);
+}
+
+.card:hover {
+  border-color: var(--bottle-green);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(34, 26, 18, 0.14);
+}

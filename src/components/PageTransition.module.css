@@ -1,0 +1,28 @@
+.transition {
+  /*
+   * margin-top, not transform: translateY — a `transform` here (even inside
+   * a keyframe) makes this element a containing block for any
+   * `position: fixed` descendant for the animation's duration, which breaks
+   * full-viewport fixed overlays rendered inside a page (e.g. IntroLoader):
+   * they'd size themselves to this element's box (the whole page's scroll
+   * height) instead of the viewport.
+   */
+  animation: pageFadeIn 560ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    margin-top: 14px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .transition {
+    animation: none;
+  }
+}

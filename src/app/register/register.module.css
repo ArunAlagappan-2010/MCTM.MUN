@@ -1,0 +1,122 @@
+.highlight {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 60rem;
+  margin: 1rem auto 0;
+  border-top: 3px solid var(--bottle-green-paper);
+  padding: 2.5rem 2.5rem;
+}
+
+.highlightItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: center;
+}
+
+.highlightValue {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: var(--ink);
+}
+
+.highlightLabel {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--bottle-green-paper);
+}
+
+.ctaWrap {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem auto 1rem;
+}
+
+.bottomCta {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto 3rem;
+}
+
+.registerBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.1rem 2.5rem;
+  background: var(--bottle-green);
+  color: #fdfcf7;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(22, 50, 41, 0.25), 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(159, 214, 184, 0.3);
+}
+
+.registerBtn:hover {
+  background: var(--bottle-green-light);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(22, 50, 41, 0.35), 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-color: rgba(159, 214, 184, 0.6);
+  color: #ffffff;
+}
+
+.registerBtn svg {
+  transition: transform 200ms ease;
+}
+
+.registerBtn:hover svg {
+  transform: translate(3px, -3px);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+  max-width: 70rem;
+  margin: 3.5rem auto 3.5rem;
+}
+
+@media (max-width: 700px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stepNum {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--bottle-green);
+  opacity: 0.72;
+  margin: 0 0 0.5rem;
+}
+
+.stepTitle {
+  font-size: 1.35rem;
+  margin: 0 0 0.7rem;
+}
+
+.stepBody {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footnote {
+  text-align: center;
+  max-width: 32rem;
+  margin: 0 auto;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+

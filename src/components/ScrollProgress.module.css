@@ -1,0 +1,29 @@
+.track {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: 150;
+  pointer-events: none;
+  background: rgba(34, 26, 18, 0.06);
+  opacity: 1;
+  transition: opacity 400ms ease;
+}
+
+:global(body[data-intro-loading]) .track {
+  opacity: 0;
+}
+
+.bar {
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(
+    to right,
+    var(--bottle-green),
+    var(--bottle-green-light)
+  );
+  will-change: transform;
+}

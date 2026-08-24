@@ -1,0 +1,170 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  opacity: 1;
+  transition: opacity 700ms ease-out 150ms;
+  overflow: hidden;
+}
+
+.overlay[data-stage="settle"] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.paperBg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: #333935;
+}
+
+.paperTint {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: rgba(16, 21, 19, 1);
+  opacity: 0;
+  transition: opacity 200ms ease-out;
+}
+
+.overlay[data-stage="settle"] .paperTint {
+  opacity: 1;
+}
+
+.inkVideo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 350ms ease;
+}
+
+.overlay[data-stage="bleed"] .inkVideo {
+  opacity: 1;
+  transition: opacity 150ms ease;
+}
+
+.overlay[data-stage="reveal"] .inkVideo,
+.overlay[data-stage="settle"] .inkVideo {
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+
+.dropWrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.drop {
+  width: 24px;
+  height: 31px;
+  margin-left: -12px;
+  border-radius: 50% 50% 48% 48% / 62% 62% 38% 38%;
+  background: radial-gradient(
+    circle at 35% 28%,
+    #333333 0%,
+    #0a0a0a 55%,
+    #000000 100%
+  );
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(-46vh) scale(0.7, 1.25);
+}
+
+.overlay[data-stage="drop"] .drop {
+  animation: dropFall 380ms cubic-bezier(0.55, 0, 1, 0.45) forwards;
+}
+
+@keyframes dropFall {
+  0% {
+    transform: translateY(-46vh) scale(0.7, 1.25);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  76% {
+    transform: translateY(0) scale(1, 1);
+    opacity: 1;
+  }
+  86% {
+    transform: translateY(1px) scale(1.7, 0.45);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(1px) scale(0.2, 0.2);
+    opacity: 0;
+  }
+}
+
+.logoWrap {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 650ms ease, transform 700ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  -webkit-mask-image: radial-gradient(
+    circle,
+    black 0%,
+    black 55%,
+    transparent 82%
+  );
+  mask-image: radial-gradient(circle, black 0%, black 55%, transparent 82%);
+  padding: 2.5rem;
+}
+
+.overlay[data-stage="reveal"] .logoWrap,
+.overlay[data-stage="settle"] .logoWrap {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.logo {
+  display: block;
+  width: min(58vw, 340px);
+  height: auto;
+}
+
+.skipHint {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(241, 233, 212, 0);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.35);
+  animation: hintIn 600ms ease 1000ms forwards;
+}
+
+@keyframes hintIn {
+  to {
+    color: rgba(241, 233, 212, 0.8);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drop,
+  .inkVideo {
+    display: none;
+  }
+
+  .logoWrap {
+    transition: opacity 400ms ease;
+    transform: none;
+  }
+}
+
