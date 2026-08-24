@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { assetPath } from "@/utils/asset";
 import styles from "./FogHero.module.css";
 
 interface CloudLayerProps {
@@ -12,10 +13,10 @@ function CloudLayer({ src, layer }: CloudLayerProps) {
   return (
     <div className={styles.cloudLayer} data-layer={layer} data-cloud-layer>
       <div className={styles.cloudItem} data-cloud-item>
-        <img className={styles.cloudImg} src={src} alt="" />
+        <img className={styles.cloudImg} src={assetPath(src)} alt="" />
       </div>
       <div className={styles.cloudItem} data-cloud-item>
-        <img className={styles.cloudImg} src={src} alt="" />
+        <img className={styles.cloudImg} src={assetPath(src)} alt="" />
       </div>
     </div>
   );
@@ -212,15 +213,15 @@ export default function FogHero({
     >
       <div className={styles.bg}>
         <picture>
-          <source media="(max-width: 767px)" srcSet="/fog/sp_map_bg.webp" />
-          <img className={styles.bgImg} src="/fog/map_bg.webp" alt="" />
+          <source media="(max-width: 767px)" srcSet={assetPath("/fog/sp_map_bg.webp")} />
+          <img className={styles.bgImg} src={assetPath("/fog/map_bg.webp")} alt="" />
         </picture>
       </div>
 
       <div ref={mistRef} className={styles.mist}>
         <video
           className={`${styles.bgImg} ${styles.mistVideo}`}
-          src="/video/fog-overlay-loop.mp4"
+          src={assetPath("/video/fog-overlay-loop.mp4")}
           autoPlay
           loop
           muted

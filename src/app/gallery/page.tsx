@@ -3,6 +3,7 @@
 import Card from "@/components/Card";
 import PageHero from "@/components/PageHero";
 import useReveal from "@/hooks/useReveal";
+import { assetPath } from "@/utils/asset";
 import styles from "./gallery.module.css";
 
 type PhotoSize = "md" | "lg" | "wide" | "tall";
@@ -115,7 +116,7 @@ function CollectionCard({ collection, index }: { collection: Collection; index: 
       <Card padding="0" className={styles.collectionCard}>
         <div className={styles.collectionCover}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={collection.cover} alt="" loading="lazy" />
+          <img src={assetPath(collection.cover)} alt="" loading="lazy" />
         </div>
         <div className={styles.collectionBody}>
           <p className={styles.collectionKicker}>{collection.kicker}</p>
@@ -150,7 +151,7 @@ function PhotoFrame({ photo, index }: { photo: Photo; index: number }) {
       style={{ transitionDelay: `${index * 60}ms` }}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img className={styles.photo} src={photo.src} alt="" loading="lazy" />
+      <img className={styles.photo} src={assetPath(photo.src)} alt="" loading="lazy" />
       <div className={styles.scrim} aria-hidden="true" />
       <span className={styles.caption}>{photo.caption}</span>
     </div>

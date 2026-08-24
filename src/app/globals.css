@@ -39,10 +39,7 @@ body {
 
 .page-shell {
   position: relative;
-  background: var(--background) url("/textures/crumpled-paper.webp");
-  background-size: auto;
-  background-position: top center;
-  background-repeat: repeat;
+  background: var(--background);
 }
 
 .content-page {

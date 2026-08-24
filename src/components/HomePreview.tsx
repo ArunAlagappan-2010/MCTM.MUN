@@ -5,6 +5,7 @@ import Card from "@/components/Card";
 import useReveal from "@/hooks/useReveal";
 import useParallax from "@/hooks/useParallax";
 import { committees, SCHOOL_ADDRESS } from "@/data/mun";
+import { assetPath } from "@/utils/asset";
 import styles from "./HomePreview.module.css";
 
 function Sparkle({ style }: { style?: React.CSSProperties }) {
@@ -116,7 +117,7 @@ function RevealFloorFrame({
       style={{ transitionDelay: `${index * 60}ms` }}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img className={styles.floorPhoto} src={src} alt="" loading="lazy" />
+      <img className={styles.floorPhoto} src={assetPath(src)} alt="" loading="lazy" />
       <div className={styles.floorScrim} aria-hidden="true" />
       <span className={styles.floorCaption}>{caption}</span>
     </div>
@@ -204,7 +205,7 @@ export default function HomePreview() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             ref={parallaxRef}
-            src="/gallery/photo-07.webp"
+            src={assetPath("/gallery/photo-07.webp")}
             alt=""
             loading="lazy"
           />

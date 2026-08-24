@@ -1,3 +1,4 @@
+import { assetPath } from "@/utils/asset";
 import styles from "./SecretariatCard.module.css";
 
 interface SecretariatCardProps {
@@ -54,7 +55,7 @@ export default function SecretariatCard({
           >
             {image ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={image} alt="" className={styles.photo} />
+              <img src={assetPath(image)} alt="" className={styles.photo} />
             ) : (
               <span className={styles.initials}>{initialsFor(names)}</span>
             )}

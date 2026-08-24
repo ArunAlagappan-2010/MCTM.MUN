@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SCHOOL_ADDRESS } from "@/data/mun";
+import { assetPath } from "@/utils/asset";
 import styles from "./Footer.module.css";
 
 const LINKS = [
@@ -21,7 +22,7 @@ export default function Footer() {
         <div className={styles.brand}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/brand/logo-transparent.png"
+            src={assetPath("/brand/logo-transparent.png")}
             alt=""
             className={styles.logo}
             aria-hidden="true"

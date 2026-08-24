@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { assetPath } from "@/utils/asset";
 import styles from "./IntroLoader.module.css";
 
 type Stage = "idle" | "drop" | "bleed" | "reveal" | "settle" | "done";
@@ -113,7 +114,7 @@ export default function IntroLoader({ onSettle }: IntroLoaderProps) {
       <video
         ref={videoRef}
         className={styles.inkVideo}
-        src="/video/intro.mp4"
+        src={assetPath("/video/intro.mp4")}
         muted
         playsInline
         preload="auto"
@@ -127,7 +128,7 @@ export default function IntroLoader({ onSettle }: IntroLoaderProps) {
       <div className={styles.logoWrap}>
         <img
           className={styles.logo}
-          src="/brand/logo-transparent.png"
+          src={assetPath("/brand/logo-transparent.png")}
           alt="M.CT.M MUN"
         />
       </div>

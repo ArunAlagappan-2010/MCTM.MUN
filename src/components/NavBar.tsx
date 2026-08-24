@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { assetPath } from "@/utils/asset";
 import styles from "./NavBar.module.css";
 
 const LINKS = [
@@ -19,7 +20,7 @@ export default function NavBar() {
     <nav className={styles.bar}>
       <Link href="/" className={styles.brand}>
         <img
-          src="/brand/logo-transparent.png"
+          src={assetPath("/brand/logo-transparent.png")}
           alt="MCTMMUN'26"
           className={styles.logo}
         />
