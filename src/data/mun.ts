@@ -137,7 +137,9 @@ export const secretariat: SecretariatRole[] = [
   {
     role: "Head of Media",
     names: "Aahan",
-    blurb: "Documents the conference in photo and video as it happens.",
+    blurb:
+      "With a passion for photography, I aim to capture the energy, debate, and memorable moments of every conference, while leading the media team and serving as Head of Media and Photographer for this year’s MUN.",
+    image: "/secretariat/aahan.jpeg",
   },
   {
     role: "Coordination",
