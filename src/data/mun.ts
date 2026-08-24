@@ -118,7 +118,9 @@ export const secretariat: SecretariatRole[] = [
   {
     role: "Head of Marketing",
     names: "Ishaan, Rayaan & Rasana",
-    blurb: "Runs the social media presence and gets the word out to schools.",
+    blurb:
+      "With a passion for global affairs and creative communication, I ensure every conference reaches a wider audience and am proud to serve as the Marketing Director for this years MUN.",
+    image: "/secretariat/ishaan.jpeg",
   },
   {
     role: "Head of Design",
