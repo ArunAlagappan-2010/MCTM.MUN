@@ -123,7 +123,9 @@ export const secretariat: SecretariatRole[] = [
   {
     role: "Head of Design",
     names: "Sankhya Venkat & Ayanah",
-    blurb: "Shapes the visual identity — everything from posters to placards.",
+    blurb:
+      "Hello! My name is Ayanah, and I am the Co-Head of Design with Sankhya. I’m someone who has always loved being creative, especially through photography and design. I’m curious by nature and enjoy exploring new ideas, experimenting with technology, and finding inspiration in the little things around me. I’m also a huge cat lover!",
+    image: "/secretariat/ayanah.jpeg",
   },
   {
     role: "Head of IT",
