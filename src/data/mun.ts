@@ -144,7 +144,9 @@ export const secretariat: SecretariatRole[] = [
   {
     role: "Coordination",
     names: "Miraya Shah & Nischay",
-    blurb: "Keeps every committee, room, and session running on schedule.",
+    blurb:
+      "I’m an avid reader and I absolutely love watching horror movies. I wanna major in marketing after graduation and I’m glad to help anyone if they have any queries during the MUN.",
+    image: "/secretariat/miraya.jpeg",
   },
   {
     role: "Certificate Writing",
