@@ -87,22 +87,26 @@ export const secretariat: SecretariatRole[] = [
   {
     role: "Secretary General",
     names: "Mekhala Charan",
-    blurb: "Sets the vision for the conference and leads the organising committee end to end.",
+    blurb:
+      "As Secretary General of MCTMMUN'26, I lead the executive committee in shaping an engaging, diplomatic, and transformative conference experience. Dedicated to international relations and policy debate, I look forward to welcoming delegates to an unforgettable edition.",
   },
   {
     role: "Co-Deputy Secretary General",
     names: "Krishna Santhanam",
-    blurb: "Works alongside the SG on conference direction, and chairs the Security Council.",
+    blurb:
+      "Serving as Co-Deputy Secretary General and Chair of the Security Council, I oversee conference operations and procedural excellence. Passionate about geopolitics and crisis resolution, I aim to foster rigorous, high-level debate on the floor.",
   },
   {
     role: "Co-Deputy Secretary General",
     names: "Aarna Karnani",
-    blurb: "Works alongside the SG on conference direction, and chairs DISEC.",
+    blurb:
+      "As Co-Deputy Secretary General and DISEC Chair, I work closely with the leadership team to ensure a seamless delegate experience. Committed to disarmament diplomacy, I strive to make committee sessions both challenging and rewarding.",
   },
   {
     role: "Head of Logistics",
     names: "Avneet & Aadhaavan",
-    blurb: "I have always been interested in organization, event management, and problem-solving. Other than this I enjoy playing football, playing the piano, and going to the gym. As Head of Logistics, I ensure smooth coordination, efficient planning, and successful MUN execution.",
+    blurb:
+      "I have always been interested in organization, event management, and problem-solving. Other than this I enjoy playing football, playing the piano, and going to the gym. As Head of Logistics, I ensure smooth coordination, efficient planning, and successful MUN execution.",
     image: "/secretariat/logistics.jpeg",
   },
   {
@@ -115,7 +119,8 @@ export const secretariat: SecretariatRole[] = [
   {
     role: "Head of Delegate Affairs",
     names: "Drishya Chordia & Amiya",
-    blurb: "First point of contact for delegate queries and school-to-school communication.",
+    blurb:
+      "Passionate about diplomatic engagement and delegate welfare. As Head of Delegate Affairs, I serve as the first point of contact for school coordination, delegate allocations, and resolving queries to ensure an inclusive conference for everyone.",
     image: "/secretariat/drishya.jpeg",
   },
   {
@@ -129,13 +134,14 @@ export const secretariat: SecretariatRole[] = [
     role: "Head of Design",
     names: "Sankhya Venkat & Ayanah",
     blurb:
-      "Hello! My name is Ayanah, and I am the Co-Head of Design with Sankhya. I’m someone who has always loved being creative, especially through photography and design. I’m curious by nature and enjoy exploring new ideas, experimenting with technology, and finding inspiration in the little things around me. I’m also a huge cat lover!",
-    image: "/secretariat/ayanah.jpeg",
+      "Hello, my name is Sankhya, and I am the Co-Head of Design with Ayanah. I’m a creative and artistic person who loves expressing myself through art and exploring new ideas. I’m always drawn to anything imaginative and enjoy finding inspiration in the world around me.",
+    image: "/secretariat/sankhya.jpeg",
   },
   {
     role: "Head of IT",
     names: "Arun",
-    blurb: "Keeps the technical side of the conference — this website included — running.",
+    blurb:
+      "Passionate about software development, systems architecture, and web technology. As Head of IT, I oversee the digital infrastructure, ensuring a fast, modern, and reliable online platform for MCTMMUN'26.",
   },
   {
     role: "Head of Media",
@@ -154,6 +160,7 @@ export const secretariat: SecretariatRole[] = [
   {
     role: "Certificate Writing",
     names: "Harshita, Keerthi, Adhitya & Ayanah",
-    blurb: "Prepares every delegate and award certificate ahead of time, name by name.",
+    blurb:
+      "Our team is dedicated to accuracy and precision, carefully crafting and verifying every delegate and award certificate to celebrate excellence and memorable achievements at MCTMMUN'26.",
   },
 ];
