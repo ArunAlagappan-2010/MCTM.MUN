@@ -115,16 +115,15 @@ export const secretariat: SecretariatRole[] = [
   {
     role: "Head of Delegate Affairs",
     names: "Drishya Chordia & Amiya",
-    blurb:
-      "Creativity has always been my driving force, and as Marketing Director for this year's MCTM MUN, I've loved turning that passion into content that actually connects with people. From campaigns to online content, our goal is to make every delegate excited to be part of something bigger.",
+    blurb: "First point of contact for delegate queries and school-to-school communication.",
     image: "/secretariat/drishya.jpeg",
   },
   {
     role: "Head of Marketing",
     names: "Ishaan, Rayaan & Rasana",
     blurb:
-      "With a passion for global affairs and creative communication, I ensure every conference reaches a wider audience and am proud to serve as the Marketing Director for this years MUN.",
-    image: "/secretariat/ishaan.jpeg",
+      "Creativity has always been my driving force, and as Marketing Director for this year's MCTM MUN, I've loved turning that passion into content that actually connects with people. From campaigns to online content, our goal is to make every delegate excited to be part of something bigger.",
+    image: "/secretariat/ryaan.jpeg",
   },
   {
     role: "Head of Design",
