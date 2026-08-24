@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar";
 import PageTransition from "@/components/PageTransition";
 import ScrollProgress from "@/components/ScrollProgress";
 import Footer from "@/components/Footer";
+import { assetPath } from "@/utils/asset";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -35,11 +36,18 @@ export const metadata: Metadata = {
     "M.CT.M Chidambaram Chettyar International School Model United Nations 2026",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const bgTexture = `url("${assetPath("/textures/crumpled-paper.webp")}")`;
+
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} ${roboto.variable} h-full antialiased`}
+      style={{ "--bg-texture": bgTexture } as React.CSSProperties}
     >
       <body className="min-h-full flex flex-col">
         <ScrollProgress />
@@ -50,3 +58,4 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     </html>
   );
 }
+
