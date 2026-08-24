@@ -108,7 +108,9 @@ export const secretariat: SecretariatRole[] = [
   {
     role: "Head of Finance",
     names: "Navya Rajan & Swetha",
-    blurb: "Handles registration fees and tracks expenditure across the whole conference.",
+    blurb:
+      "I’ve always been drawn to Economics and Mathematics because I like finding patterns and solving problems. I also enjoy learning and meeting new people with different perspectives. As Head of Finance, I’m excited to bring my ideas to the Organizing Committee and help make this year’s MUN an experience to remember.",
+    image: "/secretariat/swetha.jpeg",
   },
   {
     role: "Head of Delegate Affairs",
