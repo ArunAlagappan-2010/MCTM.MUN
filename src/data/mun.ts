@@ -175,9 +175,9 @@ export const secretariat: SecretariatRole[] = [
   },
   {
     role: "Head of IT",
-    people: [{ name: "Arun" }],
+    people: [{ name: "Arun Alagappan", image: "/secretariat/arun.png" }],
     blurb:
-      "Passionate about software development, systems architecture, and web technology. As Head of IT, I oversee the digital infrastructure, ensuring a fast, modern, and reliable online platform for M.CT.M.MUN'26.",
+      "Between coding, robotics, and CAD, I've always been drawn to figuring out how things work and then building something better. Basketball keeps me sharp off the screen too. As Head of IT, I oversee the digital infrastructure, ensuring a fast, modern, and reliable online platform for M.CT.M.MUN'26.",
   },
   {
     role: "Head of Media",
@@ -193,15 +193,5 @@ export const secretariat: SecretariatRole[] = [
     ],
     blurb:
       "I’m an avid reader and I absolutely love watching horror movies. I wanna major in marketing after graduation and I’m glad to help anyone if they have any queries during the MUN.",
-  },
-  {
-    role: "Certificate Writing",
-    people: [
-      { name: "Harshita" },
-      { name: "Keerthi" },
-      { name: "Adhitya" },
-    ],
-    blurb:
-      "Our team is dedicated to accuracy and precision, carefully crafting and verifying every delegate and award certificate to celebrate excellence and memorable achievements at M.CT.M.MUN'26.",
   },
 ];
