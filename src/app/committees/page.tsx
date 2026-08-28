@@ -7,7 +7,7 @@ export default function CommitteesPage() {
   return (
     <div className="page-shell">
       <PageHero
-        kicker="MCTMMUN'26 · Proposed Committees"
+        kicker="M.CT.M.MUN'26 · Proposed Committees"
         title="Seven Rooms, Seven Crises"
         intro="Each committee runs on its own agenda, its own pace, and its own executive board — pinned here exactly as they'll run on the floor."
       />

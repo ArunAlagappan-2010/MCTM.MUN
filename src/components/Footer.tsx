@@ -28,7 +28,7 @@ export default function Footer() {
             aria-hidden="true"
           />
           <div>
-            <p className={styles.wordmark}>MCTMMUN&apos;26</p>
+            <p className={styles.wordmark}>M.CT.M.MUN&apos;26</p>
             <p className={styles.tagline}>
               M.CT.M Chidambaram Chettyar International School &middot;
               September 18&ndash;19, 2026
@@ -64,7 +64,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.bottom}>
-        <p>&copy; 2026 MCTMMUN. All rights reserved.</p>
+        <p>&copy; 2026 M.CT.M.MUN. All rights reserved.</p>
         <p>Model United Nations, hosted on campus.</p>
       </div>
     </footer>

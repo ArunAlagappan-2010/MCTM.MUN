@@ -88,7 +88,7 @@ export const secretariat: SecretariatRole[] = [
     role: "Secretary General",
     names: "Mekhala Charan",
     blurb:
-      "As Secretary General of MCTMMUN'26, I lead the executive committee in shaping an engaging, diplomatic, and transformative conference experience. Dedicated to international relations and policy debate, I look forward to welcoming delegates to an unforgettable edition.",
+      "As Secretary General of M.CT.M.MUN'26, I lead the executive committee in shaping an engaging, diplomatic, and transformative conference experience. Dedicated to international relations and policy debate, I look forward to welcoming delegates to an unforgettable edition.",
   },
   {
     role: "Co-Deputy Secretary General",
@@ -127,7 +127,7 @@ export const secretariat: SecretariatRole[] = [
     role: "Head of Marketing",
     names: "Ishaan, Rayaan & Rasana",
     blurb:
-      "Creativity has always been my driving force, and as Marketing Director for this year's MCTM MUN, I've loved turning that passion into content that actually connects with people. From campaigns to online content, our goal is to make every delegate excited to be part of something bigger.",
+      "Creativity has always been my driving force, and as Marketing Director for this year's M.CT.M. MUN, I've loved turning that passion into content that actually connects with people. From campaigns to online content, our goal is to make every delegate excited to be part of something bigger.",
     image: "/secretariat/ryaan.jpeg",
   },
   {
@@ -141,7 +141,7 @@ export const secretariat: SecretariatRole[] = [
     role: "Head of IT",
     names: "Arun",
     blurb:
-      "Passionate about software development, systems architecture, and web technology. As Head of IT, I oversee the digital infrastructure, ensuring a fast, modern, and reliable online platform for MCTMMUN'26.",
+      "Passionate about software development, systems architecture, and web technology. As Head of IT, I oversee the digital infrastructure, ensuring a fast, modern, and reliable online platform for M.CT.M.MUN'26.",
   },
   {
     role: "Head of Media",
@@ -161,6 +161,6 @@ export const secretariat: SecretariatRole[] = [
     role: "Certificate Writing",
     names: "Harshita, Keerthi, Adhitya & Ayanah",
     blurb:
-      "Our team is dedicated to accuracy and precision, carefully crafting and verifying every delegate and award certificate to celebrate excellence and memorable achievements at MCTMMUN'26.",
+      "Our team is dedicated to accuracy and precision, carefully crafting and verifying every delegate and award certificate to celebrate excellence and memorable achievements at M.CT.M.MUN'26.",
   },
 ];

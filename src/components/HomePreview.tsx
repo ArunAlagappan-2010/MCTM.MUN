@@ -30,7 +30,7 @@ const LINKS = [
   {
     href: "/secretariat",
     label: "Secretariat",
-    body: "The IB1 students running the conference end to end.",
+    body: "The students running the conference end to end.",
   },
   {
     href: "/gallery",
@@ -134,7 +134,7 @@ export default function HomePreview() {
     <main className="page-shell content-page">
       <div className={styles.introBand}>
         <header className={styles.header}>
-          <p className={styles.kicker}>MCTMMUN&apos;26 &middot; September 18&ndash;19, 2026</p>
+          <p className={styles.kicker}>M.CT.M.MUN&apos;26 &middot; September 18&ndash;19, 2026</p>
           <h2 className={styles.title}>Two Days, Seven Committees</h2>
           <p className={styles.intro}>
             Delegates from schools across the region debating human rights,
@@ -214,7 +214,7 @@ export default function HomePreview() {
           <p className={styles.kicker}>The Second Edition</p>
           <h2 className={styles.splitTitle}>Running It Twice Means Running It Better</h2>
           <p className={styles.splitBody}>
-            MCTMMUN&apos;26 builds directly on the first edition — feedback
+            M.CT.M.MUN&apos;26 builds directly on the first edition — feedback
             windows built into the schedule, certificates prepared a week in
             advance, conduct rules briefed up front instead of litigated
             mid-committee. None of it shows up on a placard. It&apos;s the
@@ -259,7 +259,7 @@ function VenueSection() {
         <p className={styles.kicker}>The Venue</p>
         <h2 className={styles.venueTitle}>Find Us on Campus</h2>
         <p className={styles.venueBody}>
-          MCTMMUN&apos;26 runs on the campus of M.CT.M Chidambaram Chettyar
+          M.CT.M.MUN&apos;26 runs on the campus of M.CT.M Chidambaram Chettyar
           International School, in Mylapore, Chennai.
         </p>
         <address className={styles.venueAddress}>{SCHOOL_ADDRESS}</address>

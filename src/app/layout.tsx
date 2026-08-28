@@ -31,7 +31,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "MCTMMUN'26",
+  title: "M.CT.M.MUN'26",
   description:
     "M.CT.M Chidambaram Chettyar International School Model United Nations 2026",
 };

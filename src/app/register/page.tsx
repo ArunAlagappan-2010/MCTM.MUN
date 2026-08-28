@@ -2,7 +2,7 @@ import Card from "@/components/Card";
 import PageHero from "@/components/PageHero";
 import styles from "./register.module.css";
 
-const REGISTRATION_FORM_URL = "https://forms.google.com";
+const REGISTRATION_FORM_URL = "https://forms.gle/3avkYbNa6B8XHecZ9";
 
 const STEPS = [
   {
@@ -31,7 +31,7 @@ export default function RegisterPage() {
   return (
     <div className="page-shell">
       <PageHero
-        kicker="MCTMMUN'26 · MCTM Chidambaram Chettyar International School"
+        kicker="M.CT.M.MUN'26 · M.CT.M. Chidambaram Chettyar International School"
         title="Register"
       />
       <main className="content-page">
@@ -111,7 +111,7 @@ export default function RegisterPage() {
         </div>
 
         <p className={styles.footnote}>
-          Reach out to your school&apos;s IB1 coordinating team for the
+          Reach out to your school&apos;s students coordinating team for the
           delegate template and current committee availability.
         </p>
       </main>

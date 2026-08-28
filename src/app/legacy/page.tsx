@@ -5,12 +5,12 @@ import styles from "./legacy.module.css";
 export default function LegacyPage() {
   return (
     <div className="page-shell">
-      <PageHero kicker="MCTMMUN'26 · Legacy" title="The Second Edition" />
+      <PageHero kicker="M.CT.M.MUN'26 · Legacy" title="The Second Edition" />
       <main className="content-page">
         <div className={styles.columns}>
         <div className={styles.copy}>
           <p>
-            MCTM MUN began as M.CT.M Chidambaram Chettyar International
+            M.CT.M. MUN began as M.CT.M Chidambaram Chettyar International
             School&apos;s first attempt at bringing the Model United Nations
             format to its own campus — students stepping into the role of
             diplomats, researching, negotiating, and drafting resolutions on
@@ -18,8 +18,8 @@ export default function LegacyPage() {
             climate, global health.
           </p>
           <p>
-            MCTMMUN&apos;26 is the second edition, organised by the current
-            batch of IB1 students under the supervision of Ms. Shrilekha
+            M.CT.M.MUN&apos;26 is the second edition, organised by the current
+            batch of students under the supervision of Ms. Shrilekha
             (Maths Faculty) and Ms. Kiran (Economics Faculty), with the
             guidance of Ms. Sangita Varma, Head of the International School.
           </p>

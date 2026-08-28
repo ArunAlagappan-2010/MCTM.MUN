@@ -7,7 +7,7 @@ export default function SecretariatPage() {
   return (
     <div className="page-shell">
       <PageHero
-        kicker="MCTMMUN'26 · Organising Committee"
+        kicker="M.CT.M.MUN'26 · Organising Committee"
         title="The Board Behind the Board"
         intro="Hover a card to see who's behind it."
       />

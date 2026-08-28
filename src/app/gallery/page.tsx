@@ -47,13 +47,13 @@ const COLLECTIONS: Collection[] = [
   },
   {
     id: "opening",
-    kicker: "Night One & Night Two",
-    title: "Ceremony Nights",
+    kicker: "Closing Ceremony",
+    title: "Closing Ceremony",
     blurb:
-      "Flags in for the opening call to order, and the certificates handed out on the last night.",
+      "Flags in for the opening call to order, and the certificates handed out at the closing ceremony.",
     cover: "/gallery/photo-19.webp",
     photos: [
-      { src: "/gallery/photo-02.webp", caption: "Opening Night Recital", size: "lg" },
+      { src: "/gallery/photo-02.webp", caption: "Closing Ceremony Recital", size: "lg" },
       { src: "/gallery/photo-18.webp", caption: "Certificates Awarded", size: "lg" },
       { src: "/gallery/photo-19.webp", caption: "The Full Cast", size: "wide" },
       { src: "/gallery/photo-20.webp", caption: "Final Bow", size: "wide" },
@@ -70,7 +70,7 @@ const COLLECTIONS: Collection[] = [
     photos: [
       { src: "/gallery/photo-03.webp", caption: "Before the Gavel Falls", size: "wide" },
       { src: "/gallery/photo-08.webp", caption: "The Chair Calls Order", size: "md" },
-      { src: "/gallery/photo-22.webp", caption: "MCTMMUN, Signed", size: "md" },
+      { src: "/gallery/photo-22.webp", caption: "M.CT.M.MUN, Signed", size: "md" },
       { src: "/gallery/photo-23.webp", caption: "Checking In", size: "md" },
       { src: "/gallery/photo-24.webp", caption: "Committee Desks", size: "md" },
       { src: "/gallery/photo-25.webp", caption: "Queue at the Gate", size: "wide" },
@@ -99,7 +99,7 @@ const STATS = [
   { value: String(COLLECTIONS.reduce((n, c) => n + c.photos.length, 0)), label: "Frames" },
   { value: String(COLLECTIONS.length), label: "Collections" },
   { value: "7", label: "Committees" },
-  { value: "MCTMMUN'25", label: "Prior Edition" },
+  { value: "M.CT.M.MUN'25", label: "Prior Edition" },
 ];
 
 function CollectionCard({ collection, index }: { collection: Collection; index: number }) {
@@ -162,7 +162,7 @@ export default function GalleryPage() {
   return (
     <div className="page-shell">
       <PageHero
-        kicker="MCTMMUN · From the Floor"
+        kicker="M.CT.M.MUN · From the Floor"
         title="Gallery"
         intro="Frames from the first edition, sorted into the moments that made it — the floor, the ceremony, and everything that happened around them."
       />

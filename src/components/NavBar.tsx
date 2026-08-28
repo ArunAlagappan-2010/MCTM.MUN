@@ -21,7 +21,7 @@ export default function NavBar() {
       <Link href="/" className={styles.brand}>
         <img
           src={assetPath("/brand/logo-transparent.png")}
-          alt="MCTMMUN'26"
+          alt="M.CT.M.MUN'26"
           className={styles.logo}
         />
       </Link>
