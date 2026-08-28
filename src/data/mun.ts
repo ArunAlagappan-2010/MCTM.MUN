@@ -94,6 +94,7 @@ export const committees: Committee[] = [
 export interface SecretariatPerson {
   name: string;
   image?: string;
+  blurb?: string;
 }
 
 export interface SecretariatRole {
@@ -124,7 +125,12 @@ export const secretariat: SecretariatRole[] = [
   {
     role: "Head of Logistics",
     people: [
-      { name: "Avneet" },
+      {
+        name: "Avneet",
+        image: "/secretariat/avneet.jpeg",
+        blurb:
+          "Being a part of last year's M.CT.M. MUN as the Head of Design and Conference Manager, made me realise how much I love organising the tiniest details and bringing things together. I'm incredibly excited for the second edition and will put my best foot forward to make this year a success as well!",
+      },
       { name: "Aadhaavan", image: "/secretariat/logistics-hi.jpeg" },
     ],
     blurb:
@@ -194,7 +200,6 @@ export const secretariat: SecretariatRole[] = [
       { name: "Harshita" },
       { name: "Keerthi" },
       { name: "Adhitya" },
-      { name: "Ayanah", image: "/secretariat/ayanah.jpeg" },
     ],
     blurb:
       "Our team is dedicated to accuracy and precision, carefully crafting and verifying every delegate and award certificate to celebrate excellence and memorable achievements at M.CT.M.MUN'26.",

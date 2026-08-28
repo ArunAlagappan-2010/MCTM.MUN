@@ -14,7 +14,7 @@ export default function SecretariatPage() {
       <main className="content-page">
         <div className={styles.grid}>
           {secretariat.flatMap((s) =>
-            s.people.map((p) => ({ role: s.role, blurb: s.blurb, person: p }))
+            s.people.map((p) => ({ role: s.role, blurb: p.blurb ?? s.blurb, person: p }))
           ).map((entry, i) => (
             <SecretariatCard
               key={`${entry.role}-${entry.person.name}`}
