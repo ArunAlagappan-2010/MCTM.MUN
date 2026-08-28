@@ -19,6 +19,17 @@ export default function CommitteesPage() {
               <h2 className={styles.name}>{c.name}</h2>
               <p className={styles.delegates}>{c.delegates}</p>
               <p className={styles.focus}>{c.focus}</p>
+              {c.agenda && (
+                <div className={styles.agendaBlock}>
+                  <span className={styles.agendaLabel}>Agenda</span>
+                  <p className={styles.agendaText}>{c.agenda}</p>
+                  {c.freezeDate && (
+                    <span className={styles.freezeDate}>
+                      Freeze date: {c.freezeDate}
+                    </span>
+                  )}
+                </div>
+              )}
               <div className={styles.chairRow}>
                 <span className={styles.chairLabel}>Chair</span>
                 <span>{c.chair}</span>

@@ -13,14 +13,16 @@ export default function SecretariatPage() {
       />
       <main className="content-page">
         <div className={styles.grid}>
-          {secretariat.map((s, i) => (
+          {secretariat.flatMap((s) =>
+            s.people.map((p) => ({ role: s.role, blurb: s.blurb, person: p }))
+          ).map((entry, i) => (
             <SecretariatCard
-              key={`${s.role}-${s.names}`}
+              key={`${entry.role}-${entry.person.name}`}
               index={i + 1}
-              role={s.role}
-              names={s.names}
-              blurb={s.blurb}
-              image={s.image}
+              role={entry.role}
+              names={entry.person.name}
+              blurb={entry.blurb}
+              image={entry.person.image}
             />
           ))}
         </div>

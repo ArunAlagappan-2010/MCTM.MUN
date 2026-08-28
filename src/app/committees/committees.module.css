@@ -40,6 +40,41 @@
   margin: 0 0 1.4rem;
 }
 
+.agendaBlock {
+  margin: 0 0 1.4rem;
+  padding: 0.9rem 1rem;
+  background: rgba(22, 50, 41, 0.05);
+  border-left: 3px solid var(--bottle-green);
+  border-radius: 2px;
+}
+
+.agendaLabel {
+  display: block;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--bottle-green);
+  opacity: 0.85;
+  margin: 0 0 0.4rem;
+}
+
+.agendaText {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink-dark);
+  margin: 0;
+}
+
+.freezeDate {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: #5a4b32;
+  margin-top: 0.5rem;
+}
+
 .chairRow {
   display: flex;
   justify-content: space-between;

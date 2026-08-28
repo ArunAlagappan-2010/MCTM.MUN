@@ -8,6 +8,8 @@ export interface Committee {
   chair: string;
   viceChair?: string;
   focus: string;
+  agenda?: string;
+  freezeDate?: string;
   guideUrl?: string;
 }
 
@@ -20,6 +22,8 @@ export const committees: Committee[] = [
     viceChair: "Vetrivel Kartikeyan",
     focus:
       "The Council charged with maintaining international peace and security — fast-moving debate on the crises that can't wait for consensus.",
+    agenda:
+      "Maintaining international peace and security in the Arctic: addressing the militarisation of the High North and the risk of great-power confrontation.",
   },
   {
     code: "UNHRC",
@@ -28,6 +32,8 @@ export const committees: Committee[] = [
     chair: "Mekhala Charan & Amiya Sanjeev",
     focus:
       "Delegates confront violations of human dignity across the globe, balancing state sovereignty against the rights of the individual.",
+    agenda:
+      "Addressing the case of Singapore and comparable Southeast Asian jurisdictions in the human rights implications of mandatory capital punishment for drug-related offences.",
   },
   {
     code: "DISEC",
@@ -37,6 +43,8 @@ export const committees: Committee[] = [
     viceChair: "Uddhav Gurumoorthy",
     focus:
       "From nuclear non-proliferation to emerging weapons technology — the committee where global security architecture gets negotiated.",
+    agenda:
+      "Addressing the growing threat of autonomous maritime weapons and attacks on global shipping.",
   },
   {
     code: "AIPPM",
@@ -46,6 +54,8 @@ export const committees: Committee[] = [
     viceChair: "Pranav Kumar",
     focus:
       "A simulation of India's own political landscape, where delegates represent real parties debating the nation's most pressing issues.",
+    agenda:
+      "Addressing the NEET-UG paper leak crisis and restoring integrity in India's competitive examination system.",
   },
   {
     code: "WCC",
@@ -55,6 +65,8 @@ export const committees: Committee[] = [
     viceChair: "Vairavan",
     focus:
       "A high-pressure crisis committee — decisions made in minutes, consequences that unfold in real time as the situation evolves.",
+    agenda: "Proliferation of the Somali Civil War.",
+    freezeDate: "January 1, 2027",
   },
   {
     code: "IPC",
@@ -73,93 +85,117 @@ export const committees: Committee[] = [
     viceChair: "Shivaansh",
     focus:
       "Trade, debt, development, and the policy questions behind the global economy — where diplomacy meets the balance sheet.",
+    agenda:
+      "Reform of the international financial and monetary architecture in the aftermath of the global financial crisis, with particular emphasis on the governance of international financial institutions and the protection of development financing in low-income and emerging economies.",
+    freezeDate: "October 5, 2009",
   },
 ];
 
+export interface SecretariatPerson {
+  name: string;
+  image?: string;
+}
+
 export interface SecretariatRole {
   role: string;
-  names: string;
+  people: SecretariatPerson[];
   blurb: string;
-  image?: string;
 }
 
 export const secretariat: SecretariatRole[] = [
   {
     role: "Secretary General",
-    names: "Mekhala Charan",
+    people: [{ name: "Mekhala Charan" }],
     blurb:
       "As Secretary General of M.CT.M.MUN'26, I lead the executive committee in shaping an engaging, diplomatic, and transformative conference experience. Dedicated to international relations and policy debate, I look forward to welcoming delegates to an unforgettable edition.",
   },
   {
     role: "Co-Deputy Secretary General",
-    names: "Krishna Santhanam",
+    people: [{ name: "Krishna Santhanam" }],
     blurb:
       "Serving as Co-Deputy Secretary General and Chair of the Security Council, I oversee conference operations and procedural excellence. Passionate about geopolitics and crisis resolution, I aim to foster rigorous, high-level debate on the floor.",
   },
   {
     role: "Co-Deputy Secretary General",
-    names: "Aarna Karnani",
+    people: [{ name: "Aarna Karnani" }],
     blurb:
       "As Co-Deputy Secretary General and DISEC Chair, I work closely with the leadership team to ensure a seamless delegate experience. Committed to disarmament diplomacy, I strive to make committee sessions both challenging and rewarding.",
   },
   {
     role: "Head of Logistics",
-    names: "Avneet & Aadhaavan",
+    people: [
+      { name: "Avneet" },
+      { name: "Aadhaavan", image: "/secretariat/logistics-hi.jpeg" },
+    ],
     blurb:
       "I have always been interested in organization, event management, and problem-solving. Other than this I enjoy playing football, playing the piano, and going to the gym. As Head of Logistics, I ensure smooth coordination, efficient planning, and successful MUN execution.",
-    image: "/secretariat/logistics.jpeg",
   },
   {
     role: "Head of Finance",
-    names: "Navya Rajan & Swetha",
+    people: [
+      { name: "Navya Rajan" },
+      { name: "Swetha", image: "/secretariat/swetha.jpeg" },
+    ],
     blurb:
       "I’ve always been drawn to Economics and Mathematics because I like finding patterns and solving problems. I also enjoy learning and meeting new people with different perspectives. As Head of Finance, I’m excited to bring my ideas to the Organizing Committee and help make this year’s MUN an experience to remember.",
-    image: "/secretariat/swetha.jpeg",
   },
   {
     role: "Head of Delegate Affairs",
-    names: "Drishya Chordia & Amiya",
+    people: [
+      { name: "Drishya Chordia", image: "/secretariat/drishya.jpeg" },
+      { name: "Amiya" },
+    ],
     blurb:
       "Passionate about diplomatic engagement and delegate welfare. As Head of Delegate Affairs, I serve as the first point of contact for school coordination, delegate allocations, and resolving queries to ensure an inclusive conference for everyone.",
-    image: "/secretariat/drishya.jpeg",
   },
   {
     role: "Head of Marketing",
-    names: "Ishaan, Rayaan & Rasana",
+    people: [
+      { name: "Ishaan", image: "/secretariat/ishaan.jpeg" },
+      { name: "Rayaan", image: "/secretariat/ryaan.jpeg" },
+      { name: "Rasana" },
+    ],
     blurb:
       "Creativity has always been my driving force, and as Marketing Director for this year's M.CT.M. MUN, I've loved turning that passion into content that actually connects with people. From campaigns to online content, our goal is to make every delegate excited to be part of something bigger.",
-    image: "/secretariat/ryaan.jpeg",
   },
   {
     role: "Head of Design",
-    names: "Sankhya Venkat & Ayanah",
+    people: [
+      { name: "Sankhya Venkat", image: "/secretariat/sankhya.jpeg" },
+      { name: "Ayanah", image: "/secretariat/ayanah.jpeg" },
+    ],
     blurb:
       "Hello, my name is Sankhya, and I am the Co-Head of Design with Ayanah. I’m a creative and artistic person who loves expressing myself through art and exploring new ideas. I’m always drawn to anything imaginative and enjoy finding inspiration in the world around me.",
-    image: "/secretariat/sankhya.jpeg",
   },
   {
     role: "Head of IT",
-    names: "Arun",
+    people: [{ name: "Arun" }],
     blurb:
       "Passionate about software development, systems architecture, and web technology. As Head of IT, I oversee the digital infrastructure, ensuring a fast, modern, and reliable online platform for M.CT.M.MUN'26.",
   },
   {
     role: "Head of Media",
-    names: "Aahan",
+    people: [{ name: "Aahan", image: "/secretariat/aahan.jpeg" }],
     blurb:
       "With a passion for photography, I aim to capture the energy, debate, and memorable moments of every conference, while leading the media team and serving as Head of Media and Photographer for this year’s MUN.",
-    image: "/secretariat/aahan.jpeg",
   },
   {
     role: "Coordination",
-    names: "Miraya Shah & Nischay",
+    people: [
+      { name: "Miraya Shah", image: "/secretariat/miraya.jpeg" },
+      { name: "Nischay" },
+    ],
     blurb:
       "I’m an avid reader and I absolutely love watching horror movies. I wanna major in marketing after graduation and I’m glad to help anyone if they have any queries during the MUN.",
-    image: "/secretariat/miraya.jpeg",
   },
   {
     role: "Certificate Writing",
-    names: "Harshita, Keerthi, Adhitya & Ayanah",
+    people: [
+      { name: "Harshita" },
+      { name: "Keerthi" },
+      { name: "Adhitya" },
+      { name: "Ayanah", image: "/secretariat/ayanah.jpeg" },
+    ],
     blurb:
       "Our team is dedicated to accuracy and precision, carefully crafting and verifying every delegate and award certificate to celebrate excellence and memorable achievements at M.CT.M.MUN'26.",
   },
