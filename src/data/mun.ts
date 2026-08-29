@@ -118,9 +118,9 @@ export const secretariat: SecretariatRole[] = [
   },
   {
     role: "Co-Deputy Secretary General",
-    people: [{ name: "Aarna Karnani" }],
+    people: [{ name: "Aarna Karnani", image: "/secretariat/aarna.jpeg" }],
     blurb:
-      "As Co-Deputy Secretary General and DISEC Chair, I work closely with the leadership team to ensure a seamless delegate experience. Committed to disarmament diplomacy, I strive to make committee sessions both challenging and rewarding.",
+      "Meet Aarna, an IBDP2 student who enjoys MUNs, debates and public speaking. She has been pursuing Kathak for eight years and co-founded Games Archives, an initiative to revive traditional Indian games. She hopes to pursue economics and explore how it shapes the world around her.",
   },
   {
     role: "Head of Logistics",
