@@ -57,6 +57,7 @@ export const committees: Committee[] = [
       "A simulation of India's own political landscape, where delegates represent real parties debating the nation's most pressing issues.",
     agenda:
       "Addressing the NEET-UG paper leak crisis and restoring integrity in India's competitive examination system.",
+    guideUrl: "/guides/aippm-background-guide.pdf",
   },
   {
     code: "WCC",
