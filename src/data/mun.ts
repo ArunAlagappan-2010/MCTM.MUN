@@ -29,7 +29,7 @@ export const committees: Committee[] = [
     code: "UNHRC",
     name: "Human Rights Council",
     delegates: "~45 delegates",
-    chair: "Mekhala Charan & Amiya Sanjeev",
+    chair: "Mekhala Charan & Amiya Suhasini Sanjeev",
     focus:
       "Delegates confront violations of human dignity across the globe, balancing state sovereignty against the rights of the individual.",
     agenda:
@@ -62,7 +62,7 @@ export const committees: Committee[] = [
     name: "Wartime Crisis Cabinet",
     delegates: "~20 delegates",
     chair: "Advaith Chittezhi",
-    viceChair: "Vairavan",
+    viceChair: "Vairavan Karthik Subramanium",
     focus:
       "A high-pressure crisis committee — decisions made in minutes, consequences that unfold in real time as the situation evolves.",
     agenda: "Proliferation of the Somali Civil War.",
@@ -73,7 +73,7 @@ export const committees: Committee[] = [
     name: "International Press Corps",
     delegates: "~20 delegates",
     chair: "Jhanvi Vishnu",
-    viceChair: "Ahimsa",
+    viceChair: "Ahimsa Santhosh",
     focus:
       "Not delegates but journalists — reporting on, interviewing, and holding every other committee accountable across the conference.",
   },
@@ -81,8 +81,8 @@ export const committees: Committee[] = [
     code: "ECOFIN",
     name: "Economic & Financial Committee",
     delegates: "~25 delegates",
-    chair: "Sanat",
-    viceChair: "Shivaansh",
+    chair: "Sanat Ishwaran Moorthy",
+    viceChair: "Shivaansh Rathi",
     focus:
       "Trade, debt, development, and the policy questions behind the global economy — where diplomacy meets the balance sheet.",
     agenda:
@@ -126,12 +126,12 @@ export const secretariat: SecretariatRole[] = [
     role: "Head of Logistics",
     people: [
       {
-        name: "Avneet",
+        name: "Avneet Sharma",
         image: "/secretariat/avneet.jpeg",
         blurb:
           "Being a part of last year's M.CT.M. MUN as the Head of Design and Conference Manager, made me realise how much I love organising the tiniest details and bringing things together. I'm incredibly excited for the second edition and will put my best foot forward to make this year a success as well!",
       },
-      { name: "Aadhaavan", image: "/secretariat/logistics-hi.jpeg" },
+      { name: "Aadhavan Vetriazhagan", image: "/secretariat/logistics-hi.jpeg" },
     ],
     blurb:
       "I have always been interested in organization, event management, and problem-solving. Other than this I enjoy playing football, playing the piano, and going to the gym. As Head of Logistics, I ensure smooth coordination, efficient planning, and successful MUN execution.",
@@ -140,7 +140,7 @@ export const secretariat: SecretariatRole[] = [
     role: "Head of Finance",
     people: [
       { name: "Navya Rajan" },
-      { name: "Swetha", image: "/secretariat/swetha.jpeg" },
+      { name: "Swetha Krishnan", image: "/secretariat/swetha.jpeg" },
     ],
     blurb:
       "I’ve always been drawn to Economics and Mathematics because I like finding patterns and solving problems. I also enjoy learning and meeting new people with different perspectives. As Head of Finance, I’m excited to bring my ideas to the Organizing Committee and help make this year’s MUN an experience to remember.",
@@ -149,7 +149,7 @@ export const secretariat: SecretariatRole[] = [
     role: "Head of Delegate Affairs",
     people: [
       { name: "Drishya Chordia", image: "/secretariat/drishya.jpeg" },
-      { name: "Amiya" },
+      { name: "Amiya Suhasini Sanjeev" },
     ],
     blurb:
       "Passionate about diplomatic engagement and delegate welfare. As Head of Delegate Affairs, I serve as the first point of contact for school coordination, delegate allocations, and resolving queries to ensure an inclusive conference for everyone.",
@@ -157,9 +157,9 @@ export const secretariat: SecretariatRole[] = [
   {
     role: "Head of Marketing",
     people: [
-      { name: "Ishaan", image: "/secretariat/ishaan.jpeg" },
-      { name: "Rayaan", image: "/secretariat/ryaan.jpeg" },
-      { name: "Rasana" },
+      { name: "Ishaan Watwani", image: "/secretariat/ishaan.jpeg" },
+      { name: "Rayaan S", image: "/secretariat/ryaan.jpeg" },
+      { name: "Rasana Sakthivelan" },
     ],
     blurb:
       "Creativity has always been my driving force, and as Marketing Director for this year's M.CT.M. MUN, I've loved turning that passion into content that actually connects with people. From campaigns to online content, our goal is to make every delegate excited to be part of something bigger.",
@@ -168,7 +168,7 @@ export const secretariat: SecretariatRole[] = [
     role: "Head of Design",
     people: [
       { name: "Sankhya Venkat", image: "/secretariat/sankhya.jpeg" },
-      { name: "Ayanah", image: "/secretariat/ayanah.jpeg" },
+      { name: "Ayanah Saif Hashmath", image: "/secretariat/ayanah.jpeg" },
     ],
     blurb:
       "Hello, my name is Sankhya, and I am the Co-Head of Design with Ayanah. I’m a creative and artistic person who loves expressing myself through art and exploring new ideas. I’m always drawn to anything imaginative and enjoy finding inspiration in the world around me.",
@@ -181,7 +181,7 @@ export const secretariat: SecretariatRole[] = [
   },
   {
     role: "Head of Media",
-    people: [{ name: "Aahan", image: "/secretariat/aahan.jpeg" }],
+    people: [{ name: "Aahan Mhetras", image: "/secretariat/aahan.jpeg" }],
     blurb:
       "With a passion for photography, I aim to capture the energy, debate, and memorable moments of every conference, while leading the media team and serving as Head of Media and Photographer for this year’s MUN.",
   },
