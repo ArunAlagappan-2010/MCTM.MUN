@@ -1,6 +1,7 @@
 import Card from "@/components/Card";
 import PageHero from "@/components/PageHero";
 import { committees } from "@/data/mun";
+import { assetPath } from "@/utils/asset";
 import styles from "./committees.module.css";
 
 export default function CommitteesPage() {
@@ -42,9 +43,9 @@ export default function CommitteesPage() {
               )}
               <div className={styles.guideRow}>
                 <a
-                  href={c.guideUrl || "#"}
-                  target={c.guideUrl && c.guideUrl !== "#" ? "_blank" : undefined}
-                  rel={c.guideUrl && c.guideUrl !== "#" ? "noopener noreferrer" : undefined}
+                  href={c.guideUrl ? assetPath(c.guideUrl) : "#"}
+                  target={c.guideUrl ? "_blank" : undefined}
+                  rel={c.guideUrl ? "noopener noreferrer" : undefined}
                   className={styles.guideButton}
                 >
                   <span>Background Guide</span>

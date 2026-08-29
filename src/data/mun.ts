@@ -45,6 +45,7 @@ export const committees: Committee[] = [
       "From nuclear non-proliferation to emerging weapons technology — the committee where global security architecture gets negotiated.",
     agenda:
       "Addressing the growing threat of autonomous maritime weapons and attacks on global shipping.",
+    guideUrl: "/guides/disec-background-guide.pdf",
   },
   {
     code: "AIPPM",
