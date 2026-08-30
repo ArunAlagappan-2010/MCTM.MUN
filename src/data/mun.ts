@@ -30,7 +30,8 @@ export const committees: Committee[] = [
     code: "UNHRC",
     name: "Human Rights Council",
     delegates: "~45 delegates",
-    chair: "Mekhala Charan & Amiya Suhasini Sanjeev",
+    chair: "Mekhala Charan",
+    viceChair: "Amiya Suhasini Sanjeev",
     focus:
       "Delegates confront violations of human dignity across the globe, balancing state sovereignty against the rights of the individual.",
     agenda:
