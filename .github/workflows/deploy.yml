@@ -58,6 +58,9 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
         env:
+          # Only needed for GitHub Pages' project-site subpath. Once this
+          # site moves to a custom domain (served from "/"), delete this
+          # line — next.config.ts already falls back to an empty basePath.
           NEXT_PUBLIC_BASE_PATH: "/MCTM.MUN"
 
       - name: Upload artifact
