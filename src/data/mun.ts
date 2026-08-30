@@ -72,6 +72,7 @@ export const committees: Committee[] = [
       "A high-pressure crisis committee — decisions made in minutes, consequences that unfold in real time as the situation evolves.",
     agenda: "Proliferation of the Somali Civil War.",
     freezeDate: "January 1, 2027",
+    guideUrl: "/guides/wcc-background-guide.pdf",
   },
   {
     code: "IPC",
