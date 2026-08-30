@@ -101,7 +101,6 @@ export interface SecretariatPerson {
   name: string;
   image?: string;
   blurb?: string;
-  featured?: boolean;
 }
 
 export interface SecretariatRole {
@@ -114,11 +113,7 @@ export const secretariat: SecretariatRole[] = [
   {
     role: "Secretary General",
     people: [
-      {
-        name: "Mekhala Charan",
-        image: "/secretariat/mekhala.jpeg",
-        featured: true,
-      },
+      { name: "Mekhala Charan", image: "/secretariat/mekhala.jpeg" },
     ],
     blurb:
       "I’m passionate about economics, sociology, and the complexities of people and society. Outside the MUN circuit, I’m usually reading, debating, watching films, or listening to music. I’ve had a short but eventful MUN journey, and I’m excited to bring that perspective as Secretary-General.",

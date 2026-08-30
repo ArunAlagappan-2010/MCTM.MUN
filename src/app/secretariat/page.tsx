@@ -23,7 +23,6 @@ export default function SecretariatPage() {
               names={entry.person.name}
               blurb={entry.blurb}
               image={entry.person.image}
-              featured={entry.person.featured}
             />
           ))}
         </div>
