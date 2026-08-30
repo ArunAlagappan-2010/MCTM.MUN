@@ -6,6 +6,127 @@
   margin: 4.5rem auto 0;
 }
 
+.matrixBanner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  max-width: 74rem;
+  margin: 0 auto;
+  padding: 1.75rem 2rem;
+  background: #fbf8f0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: 0 10px 24px rgba(34, 26, 18, 0.08);
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+}
+
+.matrixBanner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.25rem;
+  height: 2px;
+  background: var(--bottle-green);
+}
+
+.matrixBanner:hover {
+  border-color: var(--bottle-green);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(34, 26, 18, 0.14);
+}
+
+.matrixIconWrap {
+  flex-shrink: 0;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(22, 50, 41, 0.08);
+  color: var(--bottle-green);
+}
+
+.matrixText {
+  flex: 1;
+  min-width: 0;
+}
+
+.matrixKicker {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--bottle-green);
+  opacity: 0.85;
+  margin: 0 0 0.35rem;
+}
+
+.matrixTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--ink-dark);
+  margin: 0 0 0.35rem;
+}
+
+.matrixBody {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--ink-dark-soft);
+  margin: 0;
+}
+
+.matrixCta {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.75rem 1.4rem;
+  background: var(--bottle-green);
+  color: #f8f4e8;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid rgba(159, 214, 184, 0.2);
+  white-space: nowrap;
+  transition: all 200ms ease;
+}
+
+.matrixBanner:hover .matrixCta {
+  background: var(--bottle-green-light);
+  color: #ffffff;
+}
+
+.matrixCtaIcon {
+  transition: transform 200ms ease;
+}
+
+.matrixBanner:hover .matrixCtaIcon {
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 720px) {
+  .matrixBanner {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .matrixCta {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 .code {
   font-family: var(--font-mono);
   font-size: 0.82rem;
