@@ -101,6 +101,7 @@ export interface SecretariatPerson {
   name: string;
   image?: string;
   blurb?: string;
+  featured?: boolean;
 }
 
 export interface SecretariatRole {
@@ -112,15 +113,21 @@ export interface SecretariatRole {
 export const secretariat: SecretariatRole[] = [
   {
     role: "Secretary General",
-    people: [{ name: "Mekhala Charan" }],
+    people: [
+      {
+        name: "Mekhala Charan",
+        image: "/secretariat/mekhala.jpeg",
+        featured: true,
+      },
+    ],
     blurb:
-      "As Secretary General of M.CT.M.MUN'26, I lead the executive committee in shaping an engaging, diplomatic, and transformative conference experience. Dedicated to international relations and policy debate, I look forward to welcoming delegates to an unforgettable edition.",
+      "I’m passionate about economics, sociology, and the complexities of people and society. Outside the MUN circuit, I’m usually reading, debating, watching films, or listening to music. I’ve had a short but eventful MUN journey, and I’m excited to bring that perspective as Secretary-General.",
   },
   {
     role: "Co-Deputy Secretary General",
-    people: [{ name: "Krishna Santhanam" }],
+    people: [{ name: "Krishna Santhanam", image: "/secretariat/krishna.jpeg" }],
     blurb:
-      "Serving as Co-Deputy Secretary General and Chair of the Security Council, I oversee conference operations and procedural excellence. Passionate about geopolitics and crisis resolution, I aim to foster rigorous, high-level debate on the floor.",
+      "As your Deputy Secretary-General and UNSC chair, I bring a unique perspective to this conference. Interdisciplinary thinking is core to who I am, and applying knowledge from any part of my life to MUN and debate resonates deeply with me. I hope to help make this event impactful for everyone. See you there 😁",
   },
   {
     role: "Co-Deputy Secretary General",
@@ -145,7 +152,12 @@ export const secretariat: SecretariatRole[] = [
   {
     role: "Head of Finance",
     people: [
-      { name: "Navya Rajan" },
+      {
+        name: "Navya Rajan",
+        image: "/secretariat/navya.jpeg",
+        blurb:
+          "As an aspiring Economics and Data Analytics student, I am deeply fascinated by market dynamics, and strategic decision-making. Outside of academics, I love reading literature, exploring new ideas, and spending quality time with my friends.",
+      },
       { name: "Swetha Krishnan", image: "/secretariat/swetha.jpeg" },
     ],
     blurb:
@@ -155,7 +167,12 @@ export const secretariat: SecretariatRole[] = [
     role: "Head of Delegate Affairs",
     people: [
       { name: "Drishya Chordia", image: "/secretariat/drishya.jpeg" },
-      { name: "Amiya Suhasini Sanjeev" },
+      {
+        name: "Amiya Suhasini Sanjeev",
+        image: "/secretariat/amiya.jpeg",
+        blurb:
+          "As an aspiring International Relations student, I’m interested in topics like global affairs, diplomacy, and international law. In general, I greatly enjoy singing and performing onstage, along with reading, painting, spending time with my friends, and meeting new people.",
+      },
     ],
     blurb:
       "Passionate about diplomatic engagement and delegate welfare. As Head of Delegate Affairs, I serve as the first point of contact for school coordination, delegate allocations, and resolving queries to ensure an inclusive conference for everyone.",
@@ -165,7 +182,12 @@ export const secretariat: SecretariatRole[] = [
     people: [
       { name: "Ishaan Watwani", image: "/secretariat/ishaan.jpeg" },
       { name: "Rayaan S", image: "/secretariat/ryaan.jpeg" },
-      { name: "Rasana Sakthivelan" },
+      {
+        name: "Rasana Sakthivelan",
+        image: "/secretariat/rasana.jpeg",
+        blurb:
+          "Hello! My name is Rasana, and I am the Co-Head of Marketing with Ishaan and Rayaan. I’ve always enjoyed exploring creativity, communication, and new ideas. I’m passionate about marketing, storytelling, and creating campaigns that bring people together and make an impact.",
+      },
     ],
     blurb:
       "Creativity has always been my driving force, and as Marketing Director for this year's M.CT.M. MUN, I've loved turning that passion into content that actually connects with people. From campaigns to online content, our goal is to make every delegate excited to be part of something bigger.",
@@ -195,7 +217,12 @@ export const secretariat: SecretariatRole[] = [
     role: "Coordination",
     people: [
       { name: "Miraya Shah", image: "/secretariat/miraya.jpeg" },
-      { name: "Nischay" },
+      {
+        name: "Nischay",
+        image: "/secretariat/nischay.jpeg",
+        blurb:
+          "As a student with a keen interest in business, psychology and strategic decision-making, I am fascinated by the way ideas, people, and organisations come together to create meaningful change. I enjoy exploring current affairs, engaging in discussions, and taking on opportunities that challenge me to think critically. Outside of academics, I love listening to music, playing sports, and spending time with my friends.",
+      },
     ],
     blurb:
       "I’m an avid reader and I absolutely love watching horror movies. I wanna major in marketing after graduation and I’m glad to help anyone if they have any queries during the MUN.",
