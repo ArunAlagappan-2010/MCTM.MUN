@@ -24,6 +24,7 @@ export const committees: Committee[] = [
       "The Council charged with maintaining international peace and security — fast-moving debate on the crises that can't wait for consensus.",
     agenda:
       "Maintaining international peace and security in the Arctic: addressing the militarisation of the High North and the risk of great-power confrontation.",
+    guideUrl: "/guides/unsc-background-guide.pdf",
   },
   {
     code: "UNHRC",
@@ -34,6 +35,7 @@ export const committees: Committee[] = [
       "Delegates confront violations of human dignity across the globe, balancing state sovereignty against the rights of the individual.",
     agenda:
       "Addressing the case of Singapore and comparable Southeast Asian jurisdictions in the human rights implications of mandatory capital punishment for drug-related offences.",
+    guideUrl: "/guides/unhrc-background-guide.pdf",
   },
   {
     code: "DISEC",
@@ -78,6 +80,7 @@ export const committees: Committee[] = [
     viceChair: "Ahimsa Santhosh",
     focus:
       "Not delegates but journalists — reporting on, interviewing, and holding every other committee accountable across the conference.",
+    guideUrl: "/guides/ipc-background-guide.pdf",
   },
   {
     code: "ECOFIN",
@@ -90,6 +93,7 @@ export const committees: Committee[] = [
     agenda:
       "Reform of the international financial and monetary architecture in the aftermath of the global financial crisis, with particular emphasis on the governance of international financial institutions and the protection of development financing in low-income and emerging economies.",
     freezeDate: "October 5, 2009",
+    guideUrl: "/guides/ecofin-background-guide.pdf",
   },
 ];
 
