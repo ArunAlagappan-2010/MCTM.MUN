@@ -133,7 +133,7 @@ export const secretariat: SecretariatRole[] = [
     role: "Co-Deputy Secretary General",
     people: [{ name: "Aarna Karnani", image: "/secretariat/aarna.jpeg" }],
     blurb:
-      "Meet Aarna, an IBDP2 student who enjoys MUNs, debates and public speaking. She has been pursuing Kathak for eight years and co-founded Games Archives, an initiative to revive traditional Indian games. She hopes to pursue economics and explore how it shapes the world around her.",
+      "I’m Aarna, an IBDP2 student who enjoys MUNs, debates and public speaking. I’ve been pursuing Kathak for eight years and co-founded Games Archives, an initiative to revive traditional Indian games. I hope to pursue economics and explore how it shapes the world around me.",
   },
   {
     role: "Head of Logistics",
@@ -225,6 +225,6 @@ export const secretariat: SecretariatRole[] = [
       },
     ],
     blurb:
-      "I’m an avid reader and I absolutely love watching horror movies. I wanna major in marketing after graduation and I’m glad to help anyone if they have any queries during the MUN.",
+      "I’m an avid reader and I absolutely love watching horror movies. I want to major in marketing after graduation and I’m glad to help anyone if they have any queries during the MUN.",
   },
 ];
