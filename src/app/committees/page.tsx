@@ -87,12 +87,16 @@ export default function CommitteesPage() {
                 </div>
               )}
               <div className={styles.chairRow}>
-                <span className={styles.chairLabel}>Chair</span>
+                <span className={styles.chairLabel}>
+                  {c.coChairs ? "Co-Chair" : "Chair"}
+                </span>
                 <span>{c.chair}</span>
               </div>
               {c.viceChair && (
                 <div className={styles.chairRow}>
-                  <span className={styles.chairLabel}>Vice Chair</span>
+                  <span className={styles.chairLabel}>
+                    {c.coChairs ? "Co-Chair" : "Vice Chair"}
+                  </span>
                   <span>{c.viceChair}</span>
                 </div>
               )}

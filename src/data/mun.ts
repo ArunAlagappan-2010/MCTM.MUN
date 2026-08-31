@@ -7,6 +7,8 @@ export interface Committee {
   delegates: string;
   chair: string;
   viceChair?: string;
+  /** Chair and vice chair hold the role jointly, so both should be labelled "Co-Chair". */
+  coChairs?: boolean;
   focus: string;
   agenda?: string;
   freezeDate?: string;
@@ -32,6 +34,7 @@ export const committees: Committee[] = [
     delegates: "~45 delegates",
     chair: "Mekhala Charan",
     viceChair: "Amiya Suhasini Sanjeev",
+    coChairs: true,
     focus:
       "Delegates confront violations of human dignity across the globe, balancing state sovereignty against the rights of the individual.",
     agenda:
@@ -141,7 +144,7 @@ export const secretariat: SecretariatRole[] = [
         blurb:
           "Being a part of last year's M.CT.M. MUN as the Head of Design and Conference Manager, made me realise how much I love organising the tiniest details and bringing things together. I'm incredibly excited for the second edition and will put my best foot forward to make this year a success as well!",
       },
-      { name: "Aadhavan Vetriazhagan", image: "/secretariat/logistics-hi.jpeg" },
+      { name: "Aadhaavan Vetriazhagan", image: "/secretariat/logistics-hi.jpeg" },
     ],
     blurb:
       "I have always been interested in organization, event management, and problem-solving. Other than this I enjoy playing football, playing the piano, and going to the gym. As Head of Logistics, I ensure smooth coordination, efficient planning, and successful MUN execution.",
@@ -215,7 +218,7 @@ export const secretariat: SecretariatRole[] = [
     people: [
       { name: "Miraya Shah", image: "/secretariat/miraya.jpeg" },
       {
-        name: "Nischay",
+        name: "Nischay Khabiya",
         image: "/secretariat/nischay.jpeg",
         blurb:
           "As a student with a keen interest in business, psychology and strategic decision-making, I am fascinated by the way ideas, people, and organisations come together to create meaningful change. I enjoy exploring current affairs, engaging in discussions, and taking on opportunities that challenge me to think critically. Outside of academics, I love listening to music, playing sports, and spending time with my friends.",

@@ -41,6 +41,41 @@ export default function FogHero({
   const sectionRef = useRef<HTMLElement>(null);
   const cloudsRef = useRef<HTMLDivElement>(null);
   const mistRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  // Pause the fog video whenever the hero scrolls out of view or the tab is
+  // backgrounded — it otherwise keeps decoding forever, which is the main
+  // source of jank on lower-end devices.
+  useEffect(() => {
+    const sectionEl = sectionRef.current;
+    const videoEl = videoRef.current;
+    if (!sectionEl || !videoEl) return;
+
+    let visible = false;
+
+    function sync() {
+      if (visible && document.visibilityState === "visible") {
+        videoEl!.play().catch(() => {});
+      } else {
+        videoEl!.pause();
+      }
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        visible = entry.isIntersecting;
+        sync();
+      },
+      { threshold: 0 }
+    );
+    observer.observe(sectionEl);
+    document.addEventListener("visibilitychange", sync);
+
+    return () => {
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", sync);
+    };
+  }, []);
 
   useEffect(() => {
     const sectionEl = sectionRef.current;
@@ -102,6 +137,12 @@ export default function FogHero({
 
     if (reduceMotion) return;
 
+    // Touch-only devices never fire a non-touch pointermove, so the trail
+    // would stay empty forever — skip attaching the effect entirely.
+    if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+      return;
+    }
+
     const PX_PER_CM = 96 / 2.54;
     const HOLE_R = 1.7 * PX_PER_CM;
     const MAX_ALPHA = 0.42;
@@ -117,11 +158,21 @@ export default function FogHero({
     let pointer: { x: number; y: number } | null = null;
     const trail: { x: number; y: number; born: number }[] = [];
     let hasMask = false;
+    let sectionInView = true;
+    let rafId: number | null = null;
+
+    function ensureLoop() {
+      if (rafId === null) {
+        rafId = requestAnimationFrame(frame);
+      }
+    }
 
     function onPointerMove(e: PointerEvent) {
       if (e.pointerType === "touch") return;
+      if (!sectionInView) return;
       const rect = sectionEl!.getBoundingClientRect();
       pointer = { x: e.clientX - rect.left, y: e.clientY - rect.top };
+      ensureLoop();
     }
 
     function onPointerLeave() {
@@ -131,7 +182,14 @@ export default function FogHero({
     sectionEl.addEventListener("pointermove", onPointerMove);
     sectionEl.addEventListener("pointerleave", onPointerLeave);
 
-    let rafId: number;
+    const visibilityObserver = new IntersectionObserver(
+      ([entry]) => {
+        sectionInView = entry.isIntersecting;
+        if (!sectionInView) pointer = null;
+      },
+      { threshold: 0 }
+    );
+    visibilityObserver.observe(sectionEl);
 
     function frame() {
       const now = performance.now();
@@ -194,15 +252,21 @@ export default function FogHero({
         hasMask = true;
       }
 
+      // Nothing left to animate (pointer gone, trail faded out) — stop the
+      // loop instead of ticking forever; a fresh pointermove restarts it.
+      if (!pointer && trail.length === 0) {
+        rafId = null;
+        return;
+      }
+
       rafId = requestAnimationFrame(frame);
     }
 
-    rafId = requestAnimationFrame(frame);
-
     return () => {
-      cancelAnimationFrame(rafId);
+      if (rafId !== null) cancelAnimationFrame(rafId);
       sectionEl.removeEventListener("pointermove", onPointerMove);
       sectionEl.removeEventListener("pointerleave", onPointerLeave);
+      visibilityObserver.disconnect();
     };
   }, []);
 
@@ -220,6 +284,7 @@ export default function FogHero({
 
       <div ref={mistRef} className={styles.mist}>
         <video
+          ref={videoRef}
           className={`${styles.bgImg} ${styles.mistVideo}`}
           src={assetPath("/video/fog-overlay-loop.mp4")}
           autoPlay
