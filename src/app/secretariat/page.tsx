@@ -8,7 +8,7 @@ export default function SecretariatPage() {
     <div className="page-shell">
       <PageHero
         kicker="M.CT.M.MUN'26 · Organising Committee"
-        title="The Board Behind the Board"
+        title="The Board Behind the Conference"
         intro="Hover a card to see who's behind it."
       />
       <main className="content-page">
