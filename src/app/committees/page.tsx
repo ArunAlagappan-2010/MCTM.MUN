@@ -71,8 +71,18 @@ export default function CommitteesPage() {
         <div className={styles.grid}>
           {committees.map((c) => (
             <Card key={c.code} padding="2.5rem 2.25rem 2rem">
-              <p className={styles.code}>{c.code}</p>
-              <h2 className={styles.name}>{c.name}</h2>
+              <div className={styles.cardHeader}>
+                <img
+                  src={assetPath(c.logo)}
+                  alt=""
+                  aria-hidden="true"
+                  className={styles.logo}
+                />
+                <div className={styles.headerText}>
+                  <p className={styles.code}>{c.code}</p>
+                  <h2 className={styles.name}>{c.name}</h2>
+                </div>
+              </div>
               <p className={styles.delegates}>{c.delegates}</p>
               <p className={styles.focus}>{c.focus}</p>
               {c.agenda && (

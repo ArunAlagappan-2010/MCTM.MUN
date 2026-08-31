@@ -36,12 +36,6 @@
   margin: 2.5rem auto 1rem;
 }
 
-.bottomCta {
-  display: flex;
-  justify-content: center;
-  margin: 1rem auto 3rem;
-}
-
 .registerBtn {
   display: inline-flex;
   align-items: center;

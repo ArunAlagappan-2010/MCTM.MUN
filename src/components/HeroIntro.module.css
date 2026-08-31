@@ -1,5 +1,7 @@
 .wrap {
   max-width: 42rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .eyebrow {
@@ -10,18 +12,17 @@
   color: rgba(245, 239, 221, 0.88);
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
   margin: 0 0 1.1rem;
-  padding-left: 0.1em;
 }
 
 .title {
-  font-family: var(--font-sans);
-  font-weight: 800;
+  font-family: var(--font-serif);
+  font-weight: 700;
   font-size: clamp(3rem, 9vw, 7rem);
-  line-height: 0.95;
-  color: #f5efdd;
+  line-height: 0.98;
+  color: var(--bottle-green-paper);
   margin: 0 0 1.1rem;
-  letter-spacing: 0;
-  text-shadow: 0 6px 30px rgba(0, 0, 0, 0.45);
+  letter-spacing: -0.01em;
+  text-shadow: 0 6px 30px rgba(4, 20, 12, 0.55);
 }
 
 .school {
@@ -30,7 +31,7 @@
   font-weight: 500;
   font-size: 1.08rem;
   color: rgba(245, 239, 221, 0.82);
-  margin: 0;
+  margin: 0 auto;
   max-width: 26rem;
   line-height: 1.5;
 }

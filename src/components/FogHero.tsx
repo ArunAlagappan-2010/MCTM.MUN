@@ -144,9 +144,9 @@ export default function FogHero({
     }
 
     const PX_PER_CM = 96 / 2.54;
-    const HOLE_R = 1.7 * PX_PER_CM;
-    const MAX_ALPHA = 0.42;
-    const MAX_AGE_MS = 1100;
+    const HOLE_R = 2.4 * PX_PER_CM;
+    const MAX_ALPHA = 0.88;
+    const MAX_AGE_MS = 1300;
     const MIN_SAMPLE_DIST = 5;
     const MAX_TRAIL_POINTS = 30;
 

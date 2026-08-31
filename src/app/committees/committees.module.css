@@ -127,6 +127,25 @@
   }
 }
 
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1.1rem;
+}
+
+.logo {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 5px rgba(34, 26, 18, 0.12));
+}
+
+.headerText {
+  min-width: 0;
+}
+
 .code {
   font-family: var(--font-mono);
   font-size: 0.82rem;
@@ -135,7 +154,7 @@
   text-transform: uppercase;
   color: var(--bottle-green);
   opacity: 0.95;
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.3rem;
 }
 
 .name {
@@ -143,7 +162,7 @@
   line-height: 1.2;
   color: var(--ink-dark);
   font-weight: 700;
-  margin: 0 0 0.7rem;
+  margin: 0;
 }
 
 .delegates {

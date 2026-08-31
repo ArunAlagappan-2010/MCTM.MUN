@@ -4,6 +4,7 @@ export const SCHOOL_ADDRESS =
 export interface Committee {
   code: string;
   name: string;
+  logo: string;
   delegates: string;
   chair: string;
   viceChair?: string;
@@ -19,6 +20,7 @@ export const committees: Committee[] = [
   {
     code: "UNSC",
     name: "Security Council",
+    logo: "/committees/unsc.png",
     delegates: "~20 delegates",
     chair: "Krishna Santhanam",
     viceChair: "Vetrivel Kartikeyan",
@@ -31,6 +33,7 @@ export const committees: Committee[] = [
   {
     code: "UNHRC",
     name: "Human Rights Council",
+    logo: "/committees/unhrc.png",
     delegates: "~45 delegates",
     chair: "Mekhala Charan",
     viceChair: "Amiya Suhasini Sanjeev",
@@ -44,6 +47,7 @@ export const committees: Committee[] = [
   {
     code: "DISEC",
     name: "Disarmament & International Security",
+    logo: "/committees/disec.png",
     delegates: "~45 delegates",
     chair: "Aarna Karnani",
     viceChair: "Uddhav Gurumoorthy",
@@ -56,6 +60,7 @@ export const committees: Committee[] = [
   {
     code: "AIPPM",
     name: "All India Political Parties Meet",
+    logo: "/committees/aippm.png",
     delegates: "~25 delegates",
     chair: "Madhav Gurumoorthy",
     viceChair: "Pranav Kumar",
@@ -68,6 +73,7 @@ export const committees: Committee[] = [
   {
     code: "WCC",
     name: "Wartime Crisis Cabinet",
+    logo: "/committees/wcc.png",
     delegates: "~20 delegates",
     chair: "Advaith Chittezhi",
     viceChair: "Vairavan Karthik Subramanium",
@@ -80,6 +86,7 @@ export const committees: Committee[] = [
   {
     code: "IPC",
     name: "International Press Corps",
+    logo: "/committees/ipc.png",
     delegates: "~20 delegates",
     chair: "Jhanvi Vishnu",
     viceChair: "Ahimsa Santhosh",
@@ -90,6 +97,7 @@ export const committees: Committee[] = [
   {
     code: "ECOFIN",
     name: "Economic & Financial Committee",
+    logo: "/committees/ecofin.png",
     delegates: "~25 delegates",
     chair: "Sanat Ishwaran Moorthy",
     viceChair: "Shivaansh Rathi",
