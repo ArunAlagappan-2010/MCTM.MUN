@@ -2,7 +2,7 @@ import Card from "@/components/Card";
 import PageHero from "@/components/PageHero";
 import styles from "./register.module.css";
 
-const REGISTRATION_FORM_URL = "https://forms.gle/3avkYbNa6B8XHecZ9";
+const REGISTRATION_FORM_URL = "https://forms.gle/FV1jX59hgEbnvbap8";
 
 const STEPS = [
   {
